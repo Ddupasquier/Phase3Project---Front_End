@@ -13,8 +13,9 @@ function IntroScreen() {
     autoStart: true,
     loop: true,
   }}
-/></h1><br/>
+/></h1>
       </Link>
+      <p className="togreen">Maybe we put a bit about the game in this section</p>
       <div>
         <p>
           <button
@@ -26,10 +27,9 @@ function IntroScreen() {
             aria-controls="collapseExample"
           >
             A Bit About The Creators
-          </button>
-        </p>
+          </button></p>
         <div class="collapse" id="collapseExample">
-          <div class="aboutcreators card card-body">
+          <div class="aboutcreators">
             <AboutCreators />
           </div>
         </div>

@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+.screentext {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8em;
+}
+
 body,
 html {
   margin: 0px;
@@ -10,14 +15,14 @@ body {
 }
 
 .gamescreen > div {
-  border: solid black;
+  border: solid rgb(77, 77, 77);
+  border-radius: 6px;
 }
 
 .gamescreen {
-  min-width: 20%;
-  max-width: 80%;
-  margin-left: 10%;
-  margin-top: 4%;
+  max-width: 65%;
+  margin-left: 17.5%;
+  margin-top: 1%;
   position: absolute;
   border: solid rgb(77, 77, 77);
   border-radius: 10px;
@@ -25,27 +30,49 @@ body {
 
 .screen {
   width: 100%;
-  height: 36rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("https://marketplacecdn.yoyogames.com/images/assets/3060/screenshots/8158_original.PNG?1449350336");
+  height: 30rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("https://marketplacecdn.yoyogames.com/images/assets/3060/screenshots/8158_original.PNG?1449350336");
   background-size: 100% 100%;
-  padding-bottom: 3%;
-  padding-top: 3%;
 }
 
 .screentext {
-  margin: 2%;
-  padding-right: 4rem;
-  padding-left: 3rem;
-  padding-bottom: 3rem;
+  margin-top: 2.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
   overflow-y: scroll;
-  max-height: 95%;
+  height: 87%;
+}
+
+.screentext::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.inventory {
+  margin-left: 1%;
+}
+
+.items {
+  font-size: 2rem;
+}
+
+.col {
+  width: 20%;
 }
 
 .aboutcreators {
-  max-width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
   color: black;
-  margin: auto;
+  margin-left: 14%;
   margin-bottom: 2%;
+  text-align: left;
+}
+.card {
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .introscreen {
@@ -70,4 +97,14 @@ body {
 
 .bitfont {
   font-family: "Press Start 2P", cursive;
+}
+
+.zindex {
+  z-index: 1;
+  position: absolute;
+}
+
+.cardbg {
+  background: black;
+  margin-bottom: 3rem;
 }
