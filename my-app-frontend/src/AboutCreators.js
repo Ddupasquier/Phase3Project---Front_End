@@ -1,6 +1,8 @@
-import React from 'react';
+import React from "react";
 function AboutCreators() {
-    return ( <div>A bit about Justin, Hannah, and Dylan</div> );
+  return (
+    <div className="aboutcreators bitfont">A bit about Justin, Hannah, and Dylan</div>
+  );
 }
 
 export default AboutCreators;

@@ -1,3 +1,43 @@
-body, html {
-  margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body,
+html {
+  margin: auto;
+}
+
+body {
+  background: black;
+}
+
+.grid > div {
+  border: solid black;
+}
+
+.grid {
+  max-width: 80%;
+}
+
+.aboutcreators {
+  max-width: 80%;
+  color: black;
+  margin: auto;
+}
+
+.introscreen {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.togreen {
+  color: greenyellow;
+}
+
+.button {
+  background: black;
+  border: none;
+}
+
+.bitfont {
+  font-family: "Press Start 2P", cursive;
 }
