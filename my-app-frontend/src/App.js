@@ -1,7 +1,6 @@
 import "./style.css";
 import IntroScreen from "./IntroScreen";
 import GameContainer from "./GameContainer";
-// import { Switch, Route } from "react-router-dom";
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
