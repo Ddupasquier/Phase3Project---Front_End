@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 function IntroScreen() {
   return (
-    <div className="introscreen ui inverted segment">
+    <div className="introscreen">
       <Link to="/gametitle" className="togreen bitfont">
       <h1><Typewriter
   options={{
