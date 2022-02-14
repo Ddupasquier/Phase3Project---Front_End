@@ -7,7 +7,7 @@ import ScreenText from "./ScreenText";
 function GameScreen() {
   return (
     <>
-      <div className="screentext glitch">
+      <div className="screentext">
         <ScreenText />
       </div>
       <p>

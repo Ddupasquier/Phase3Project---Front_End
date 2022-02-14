@@ -3,7 +3,6 @@ import React from "react";
 function ScreenText() {
   return (
     <>
-    <div className="line">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac rhoncus
       nisl. Maecenas porttitor, dui sed cursus aliquam, sem ipsum luctus est, in
       accumsan leo sem posuere massa. Pellentesque at leo elit. Nullam vitae
@@ -51,7 +50,6 @@ function ScreenText() {
       sollicitudin nibh vestibulum sed. Proin tempor rutrum odio at volutpat.
       Integer consectetur consequat est nec hendrerit. Nam maximus pulvinar
       nulla ut viverra. Praesent sed pretium ante.
-      </div>
     </>
   );
 }
