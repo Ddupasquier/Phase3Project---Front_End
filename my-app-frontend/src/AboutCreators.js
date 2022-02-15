@@ -4,7 +4,7 @@ function AboutCreators() {
     <div className="aboutcreators cards">
       <div class="card justin">
     <div class="content">
-      <div class="header">Justin Luciano</div>
+      <div class="header"><b>Justin Luciano</b></div>
       <div class="meta">Co-Writer</div>
       <div class="description">
         words
@@ -13,7 +13,7 @@ function AboutCreators() {
   </div>
   <div class="card">
     <div class="content">
-      <div class="header">Hannah Burdge</div>
+      <div class="header"><b>Hannah Burdge</b></div>
       <div class="meta">Co-Writer</div>
       <div class="description">
         words
@@ -22,7 +22,7 @@ function AboutCreators() {
   </div>
   <div class="card">
     <div class="content">
-      <div class="header">Dylan Dupasquier</div>
+      <div class="header"><b>Dylan Dupasquier</b></div>
       <div class="meta">Co-Writer</div>
       <div class="description">
         words

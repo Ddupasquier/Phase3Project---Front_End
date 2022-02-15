@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Inventory from "./Inventory";
 import Map from "./Map";
 import ScreenText from "./ScreenText";
@@ -17,7 +17,7 @@ function GameScreen() {
 
   return (
     <>
-      <div className="screentext glitch">
+      <div className="screentext">
         <ScreenText data={data} />
       </div>
       <p>
@@ -53,7 +53,7 @@ function GameScreen() {
         <div class="col">
           <div class="collapse multi-collapse" id="multiCollapseExample2">
             <div class="card card-body cardbg">
-              <Inventory />
+              <Inventory data={data} />
             </div>
           </div>
         </div>
