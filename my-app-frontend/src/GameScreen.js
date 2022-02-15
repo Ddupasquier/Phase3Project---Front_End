@@ -5,6 +5,7 @@ import ScreenText from "./ScreenText";
 
 function GameScreen() {
   const [data, setData] = useState(null);
+  console.log(data);
   useEffect(() => {
     fetch("http://localhost:9292/rooms/9")
       .then((res) => res.json())
@@ -14,10 +15,14 @@ function GameScreen() {
       });
   }, []);
 
+  function handleDataState(data) {
+    setData(data);
+  }
+
   return (
     <>
       <div className="screentext">
-        <ScreenText data={data} />
+        <ScreenText data={data} handleDataState={handleDataState} />
       </div>
       <p>
         <a
