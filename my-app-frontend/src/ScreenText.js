@@ -1,8 +1,10 @@
 import React from "react";
+import image from "./LocalAssets/pixil-frame-0 (2).png"
 
 function ScreenText({ data: { props } }) {
   return (
     <>
+    <img src={image} alt="ugh" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac
         rhoncus nisl. Maecenas porttitor, dui sed cursus aliquam, sem ipsum
