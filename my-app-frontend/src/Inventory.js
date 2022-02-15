@@ -6,7 +6,7 @@ import * as GiIcons from "react-icons/gi";
 // import * as MdIcons from "react-icons/md";
 // MdIcons.MdOutlineLocalMovies
 
-function Inventory() {
+function Inventory({data: {inventory}}) {
   return (
     <div className="items">
       <BsIcons.BsKey />
