@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import image from "./LocalAssets/pixil-frame-0 (2).png";
 
 function ScreenText({ data }) {
   const [convoId, setConvoId] = useState(1);
@@ -28,7 +29,8 @@ function ScreenText({ data }) {
   ));
   return (
     <>
-      <div className="line">{data.conversations[convoId - 1].text}</div>
+      <img src={image}></img>
+      <p>{data.conversations[convoId - 1].text}</p>
       <div>{buttons}</div>
     </>
   );

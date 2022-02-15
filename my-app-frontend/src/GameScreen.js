@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Inventory from "./Inventory";
 import Map from "./Map";
 import ScreenText from "./ScreenText";
-import { useState, useEffect } from "react";
 
 function GameScreen() {
   const [data, setData] = useState(null);
