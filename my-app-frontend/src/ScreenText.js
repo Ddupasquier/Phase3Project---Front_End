@@ -1,33 +1,9 @@
 import React from "react";
-// import FishEye from "react-fisheye";
-var reactFisheye = require("react-fisheye");
 
-const list = [
-  { key: "aaa" },
-  { key: "bbb" },
-  { key: "ccc" },
-  { key: "ddd" },
-  { key: "eee" },
-  { key: "fff" },
-  { key: "ggg" },
-  { key: "vvv" }
-];
 
 function ScreenText() {
   return (
     <>
-    <div className="App">
-      <p>Hello CodeSandbox</p>
-      <p>Start editing to see some magic happen!</p>
-      {/* <Fisheye */}
-      <reactFisheye
-        multiple={0.35}
-        data={list}
-        render={(item, index) => {
-          return <div>{item.key + ' ' + index}</div>
-        }}
-      />
-    </div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac rhoncus
       nisl. Maecenas porttitor, dui sed cursus aliquam, sem ipsum luctus est, in
       accumsan leo sem posuere massa. Pellentesque at leo elit. Nullam vitae
