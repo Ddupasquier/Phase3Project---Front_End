@@ -38,13 +38,14 @@ body {
 
 .screentext {
   margin-top: 2rem;
-  margin-left: 4rem;
+  margin-left: 5%;
   margin-bottom: 1rem;
-  padding-right: 4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   overflow-y: scroll;
   height: 87.5%;
   width: 90%;
-  /* border-radius: 30px; */
+  border: solid gray;
   text-align: center;
 }
 
@@ -63,22 +64,25 @@ body::-webkit-scrollbar {
   text-transform: capitalize;
 }
 
+.screentext > img {
+  width: 90%;
+  margin-top: 1rem;
+}
+
 .convo_btns {
   background: none;
   color: white;
   text-align: left;
   border: none;
+  float: left;
+  margin-left: 5%;
 }
 
 .convo_btns:hover {
   color: grey;
 }
 
-button p::first-letter {
-  text-transform: capitalize;
-}
-
-button p > img {
+button > img {
   width: 13px;
 }
 

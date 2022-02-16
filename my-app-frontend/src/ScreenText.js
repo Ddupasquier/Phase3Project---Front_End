@@ -41,9 +41,7 @@ function ScreenText({ data, handleDataState }) {
       name={c.next_conversation_id}
       className="convo_btns"
     >
-      <p>
-        {arrow} {c.text}
-      </p>
+        {arrow}{c.text}
     </button>
   ));
   return (
