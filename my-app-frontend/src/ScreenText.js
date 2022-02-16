@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import image from "./LocalAssets/pixil-frame-0 (2).png";
 import blinkingarrow from "./LocalAssets/right_arrow_transparent.gif";
 
 function ScreenText({ data, handleDataState }) {
   // const [convoId, setConvoId] = useState(1);
   console.log(data);
-
-  if (data === null) {
-    return <h2>Loading...</h2>;
-  }
+  const [typewrittenText, setTypewrittenText] = useState("");
   const [roomData, convoId] = data;
+  const [intervalId, setIntervalId] = useState(null);
+  const currentConvo = roomData.conversations.filter((c) => c.id === convoId);
+
+  const txt = `${currentConvo[0].text}`;
+  const speed = 50;
+
+  useEffect(() => {
+    console.log("looping");
+    const id = setInterval(() => {
+      setTypewrittenText((text) => {
+        if (text.length < txt.length) {
+          return text + txt[text.length];
+        } else {
+          clearInterval(id);
+          return text;
+        }
+      });
+      setIntervalId(id);
+      return () => clearInterval(intervalId);
+    }, speed);
+  }, [txt]);
 
   const arrow = <img src={blinkingarrow} alt="arrow" />;
 
@@ -22,6 +40,8 @@ function ScreenText({ data, handleDataState }) {
   }
 
   function handleButtonClick(e) {
+    clearInterval(intervalId);
+    setTypewrittenText("");
     const convo = roomData.conversations.filter(
       (c) => c.id === parseInt(e.target.name)
     );
@@ -31,7 +51,7 @@ function ScreenText({ data, handleDataState }) {
       handleDataState(roomData, convo[0].id);
     }
   }
-  const currentConvo = roomData.conversations.filter((c) => c.id === convoId);
+
   console.log(currentConvo);
   const choices = currentConvo[0].choices;
   const buttons = choices.map((c) => (
@@ -41,13 +61,18 @@ function ScreenText({ data, handleDataState }) {
       name={c.next_conversation_id}
       className="convo_btns"
     >
-        {arrow}{c.text}
+      {arrow}
+      {c.text}
     </button>
   ));
+
   return (
     <>
       <img src={image} alt="img"></img>
-      <p>{currentConvo[0].text}</p>
+      <br />
+      <p className="convo_text" id="demo">
+        {typewrittenText}
+      </p>
       <div>{buttons}</div>
     </>
   );

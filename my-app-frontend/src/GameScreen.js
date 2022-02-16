@@ -21,7 +21,11 @@ function GameScreen() {
   return (
     <>
       <div className="screentext">
-        <ScreenText data={data} handleDataState={handleDataState} />
+        {data ? (
+          <ScreenText data={data} handleDataState={handleDataState} />
+        ) : (
+          <h2>Loading...</h2>
+        )}
       </div>
       <p>
         <a

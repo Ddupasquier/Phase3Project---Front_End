@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 function IntroScreen() {
+
+
+
   return (
     <div className="introscreen">
       <Link to="/gametitle" className="togreen bitfont">
@@ -17,6 +20,7 @@ function IntroScreen() {
           />
         </h1>
       </Link>
+      
       <p className="togreen">
         Maybe we put a bit about the game in this section
       </p>
@@ -41,6 +45,8 @@ function IntroScreen() {
       </div>
     </div>
   );
+
+  
 }
 
 export default IntroScreen;
