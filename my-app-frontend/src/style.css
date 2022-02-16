@@ -84,6 +84,7 @@ body::-webkit-scrollbar {
 
 button > img {
   width: 13px;
+  float: left;
 }
 
 .inventory {
