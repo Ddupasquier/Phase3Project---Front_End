@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import image from "./LocalAssets/pixil-frame-0 (2).png";
+import blinkingarrow from "./LocalAssets/right_arrow_transparent.gif"
 
 function ScreenText({ data, handleDataState }) {
   const [convoId, setConvoId] = useState(1);
@@ -8,6 +9,8 @@ function ScreenText({ data, handleDataState }) {
     return <h2>Loading...</h2>;
   }
   console.log(convoId);
+
+  const arrow = <img src={blinkingarrow} alt="arrow" />
 
   function loadNextConvoData(id) {
     fetch(`http://localhost:9292/conversations/${id}`)
@@ -33,13 +36,17 @@ function ScreenText({ data, handleDataState }) {
   console.log(currentConvo);
   const choices = currentConvo[0].choices;
   const buttons = choices.map((c) => (
-    <button onClick={handleButtonClick} name={c.next_conversation_id}>
-      {c.text}
+    <button
+      onClick={handleButtonClick}
+      name={c.next_conversation_id}
+      className="convo_btns"
+    >
+      <p>{arrow}{" "}{c.text}</p>
     </button>
   ));
   return (
     <>
-      <img src={image}></img>
+      <img src={image} alt="img"></img>
       <p>{data.conversations[convoId - 1].text}</p>
       <div>{buttons}</div>
     </>

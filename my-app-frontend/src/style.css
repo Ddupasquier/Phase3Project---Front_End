@@ -40,11 +40,12 @@ body {
   margin-top: 2rem;
   margin-left: 4rem;
   margin-bottom: 1rem;
-  padding-right: 2rem;
+  padding-right: 4rem;
   overflow-y: scroll;
-  height: 88.5%;
+  height: 87.5%;
   width: 90%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
+  text-align: center;
 }
 
 .screentext::-webkit-scrollbar,
@@ -54,10 +55,31 @@ body::-webkit-scrollbar {
 
 .screentext > p {
   text-indent: 50px;
+  text-align: left;
 }
 
 .screentext > p::first-letter {
   font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.convo_btns {
+  background: none;
+  color: white;
+  text-align: left;
+  border: none;
+}
+
+.convo_btns:hover {
+  color: grey;
+}
+
+button p::first-letter {
+  text-transform: capitalize;
+}
+
+button p > img {
+  width: 13px;
 }
 
 .inventory {
