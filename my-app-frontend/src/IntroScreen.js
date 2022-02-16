@@ -7,15 +7,19 @@ function IntroScreen() {
   return (
     <div className="introscreen">
       <Link to="/gametitle" className="togreen bitfont">
-      <h1><Typewriter
-  options={{
-    strings: ['Enter'],
-    autoStart: true,
-    loop: true,
-  }}
-/></h1>
+        <h1>
+          <Typewriter
+            options={{
+              strings: ["Enter"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h1>
       </Link>
-      <p className="togreen">Maybe we put a bit about the game in this section</p>
+      <p className="togreen">
+        Maybe we put a bit about the game in this section
+      </p>
       <div>
         <p>
           <button
@@ -27,9 +31,10 @@ function IntroScreen() {
             aria-controls="collapseExample"
           >
             A Bit About The Creators
-          </button></p>
-        <div class="collapse" id="collapseExample">
-          <div class="aboutcreators">
+          </button>
+        </p>
+        <div className="collapse" id="collapseExample">
+          <div className="aboutcreators">
             <AboutCreators />
           </div>
         </div>

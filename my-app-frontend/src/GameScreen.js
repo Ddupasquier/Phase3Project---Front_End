@@ -10,13 +10,12 @@ function GameScreen() {
     fetch("http://localhost:9292/rooms/9")
       .then((res) => res.json())
       .then((data) => {
-        setData(data);
-        console.log(data);
+        setData([data, 1]);
       });
   }, []);
 
-  function handleDataState(data) {
-    setData(data);
+  function handleDataState(data, nextConvoId) {
+    setData([data, nextConvoId]);
   }
 
   return (
@@ -26,7 +25,7 @@ function GameScreen() {
       </div>
       <p>
         <a
-          class="btn btn-primary map"
+          className="btn btn-primary map"
           data-toggle="collapse"
           href="#multiCollapseExample1"
           role="button"
@@ -36,7 +35,7 @@ function GameScreen() {
           Map
         </a>
         <button
-          class="btn btn-primary inventory"
+          className="btn btn-primary inventory"
           type="button"
           data-toggle="collapse"
           data-target="#multiCollapseExample2"
@@ -46,17 +45,17 @@ function GameScreen() {
           Inventory
         </button>
       </p>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card cardbg">
+      <div className="row">
+        <div className="col">
+          <div className="collapse multi-collapse" id="multiCollapseExample1">
+            <div className="card cardbg">
               <Map />
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body cardbg">
+        <div className="col">
+          <div className="collapse multi-collapse" id="multiCollapseExample2">
+            <div className="card card-body cardbg">
               <Inventory data={data} />
             </div>
           </div>
