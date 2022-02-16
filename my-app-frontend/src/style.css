@@ -45,7 +45,7 @@ body {
   overflow-y: scroll;
   height: 87.5%;
   width: 90%;
-  border: solid gray;
+  /* border: solid gray; */
   text-align: center;
 }
 
