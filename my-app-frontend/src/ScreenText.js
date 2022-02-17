@@ -11,7 +11,7 @@ function ScreenText({ data, handleDataState }) {
   const currentConvo = roomData.conversations.filter((c) => c.id === convoId);
 
   const txt = `${currentConvo[0].text}`;
-  const speed = 10;
+  const speed = 65;
 
   useEffect(() => {
     console.log("looping");
