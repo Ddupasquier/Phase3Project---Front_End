@@ -11,7 +11,7 @@ function ScreenText({ data, handleDataState }) {
   const currentConvo = roomData.conversations.filter((c) => c.id === convoId);
 
   const txt = `${currentConvo[0].text}`;
-  const speed = 65;
+  const speed = 0;
 
   useEffect(() => {
     console.log("looping");
@@ -25,7 +25,9 @@ function ScreenText({ data, handleDataState }) {
         }
       });
       setIntervalId(id);
-      return () => clearInterval(intervalId);
+      return () => {
+        clearInterval(intervalId);
+      };
     }, speed);
   }, [txt]);
 
@@ -73,7 +75,7 @@ function ScreenText({ data, handleDataState }) {
       <p className="convo_text" id="demo">
         {typewrittenText}
       </p>
-      <div>{buttons}</div>
+      <div>{typewrittenText === txt ? buttons : null}</div>
     </>
   );
 }
