@@ -20,7 +20,7 @@ body {
 } */
 
 .gamescreen {
-  max-width: 55%;
+  width: 55%;
   height: 85%;
   margin-left: 23%;
   margin-top: 1%;
