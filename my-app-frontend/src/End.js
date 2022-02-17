@@ -8,14 +8,16 @@ function End() {
         <span className="q">?</span>
       </h1>
       {/*  */}
-      <span className="rickroll"><iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/xLGktQmtR5A?autoplay=1"
-        title="YouTube video player"
-        frameborder="10"
-        
-      ></iframe></span>
+      <span className="rickroll">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/xLGktQmtR5A?autoplay=1"
+          title="YouTube video player"
+          frameborder="10"
+          allow="autoplay"
+        ></iframe>
+      </span>
     </div>
   );
 }

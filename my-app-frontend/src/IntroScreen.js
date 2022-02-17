@@ -5,11 +5,9 @@ import Typewriter from "typewriter-effect";
 
 function IntroScreen() {
 
-
-
-  return (
+return (
     <div className="introscreen">
-      <Link to="/gametitle" className="togreen bitfont">
+      <Link to="/game" className="togreen bitfont">
         <h1>
           <Typewriter
             options={{

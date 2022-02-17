@@ -1,10 +1,22 @@
 import React, { useEffect, useState } from "react";
-import Inventory from "./Inventory";
-import Map from "./Map";
 import ScreenText from "./ScreenText";
 
-function GameScreen() {
+function GameScreen({ setHouseState }) {
   const [data, setData] = useState(null);
+  const basement_attic = [27, 36, 1, 17];
+  const fliphouse = [21];
+  const reghouse = [4];
+
+  if (data !== null) {
+    if (reghouse.includes(data[1])) {
+      setHouseState("reghouse");
+    } else if (fliphouse.includes(data[1])) {
+      setHouseState("fliphouse");
+    } else if (basement_attic.includes(data[1])) {
+      setHouseState("basement_attic");
+    }
+  }
+
   console.log(data);
   useEffect(() => {
     fetch("http://localhost:9292/rooms/9")
@@ -27,7 +39,6 @@ function GameScreen() {
           <h2>Loading...</h2>
         )}
       </div>
-      
     </>
   );
 }

@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import GameScreen from "./GameScreen";
 import Inventory from "./Inventory";
 import Map from "./Map";
 
 function GameContainer() {
+const [houseState, setHouseState] = useState("basement_attic")
+
+
   return (
-    <div id="bg" className="reghouse">
+    <div id="bg" className={houseState}>
       <div className="gamescreen togreen">
-        <GameScreen />
+        <GameScreen setHouseState={setHouseState}/>
         <p>
           <a
             className="btn btn-primary map"
