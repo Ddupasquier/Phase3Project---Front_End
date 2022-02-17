@@ -1,6 +1,7 @@
 import "./style.css";
 import IntroScreen from "./IntroScreen";
 import GameContainer from "./GameContainer";
+import End from "./End";
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -8,8 +9,11 @@ function App() {
   return (
     <div className="App">
         <Switch>
-        <Route path="/gametitle">
+        <Route path="/game">
           <GameContainer />
+        </Route>
+        <Route path="/end">
+          <End />
         </Route>
         <Route path="/">
           <IntroScreen />

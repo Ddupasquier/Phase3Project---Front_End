@@ -68,11 +68,6 @@ function ScreenText({ data, handleDataState }) {
     </button>
   ));
 
-
-  // IF HOUSEFLIP == T DO FIRST BG ELSE DO SECOND BG
-  // function changeBg() {document.body.style.backgroundImage = "url('https://thumbs.dreamstime.com/b/burnt-grunge-brick-wall-flaking-paint-wall-burnt-peeling-paint-now-black-used-to-be-white-revealing-brick-structure-154481847.jpg')";}
-  // changeBg()
-
   return (
     <>
       <img src={image} alt="img"></img>
