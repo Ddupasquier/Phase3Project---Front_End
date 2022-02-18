@@ -8,9 +8,9 @@ function IntroScreen() {
     <>
       <div className="introscreen">
       <UserLogin />
-        <p className="togreen">
-          Maybe we put a bit about the game in this section
-        </p>
+        <h1 className="togreen bitfont">
+          All Roads Lead Home
+        </h1>
         <div>
           <p>
             <button
