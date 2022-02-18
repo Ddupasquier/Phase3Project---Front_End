@@ -97,15 +97,15 @@ button > img {
 
 .map {
   position: relative;
-  top: -43rem;
-  right: -91%;
+  top: -88vh;
+  right: -90%;
 
 }
 
 .collapsediv {
   width: 45%;
   position: relative;
-  top: -43rem;
+  top: -88vh;
   right: -91%;
 }
 
