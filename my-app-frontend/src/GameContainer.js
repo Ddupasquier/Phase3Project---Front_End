@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import GameScreen from "./GameScreen";
 import Map from "./Map";
+import Audio from "./LocalAssets/dark-drone-ambient-(black13-first.was sound).mp3"
 
 function GameContainer() {
 const [houseState, setHouseState] = useState("basement_attic")
 
 
   return (
-    <div id="bg" className="fliphouse">
+    
+    <div id="bg" className={houseState}>
+      <audio
+        className="audio"
+        controls
+        src={Audio} autoplay>
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
       <div className="gamescreen togreen">
         <GameScreen setHouseState={setHouseState}/>
         <p>

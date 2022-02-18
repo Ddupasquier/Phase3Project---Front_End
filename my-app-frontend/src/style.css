@@ -218,3 +218,11 @@ button > img {
     height: 0;
   }
 }
+
+.audio {
+  width: 14%;
+  height: 5%;
+  position: absolute;
+  top: 5px;
+  left: 84%;
+}
