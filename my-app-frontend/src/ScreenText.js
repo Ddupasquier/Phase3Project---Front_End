@@ -74,7 +74,7 @@ function ScreenText({ data, handleDataState, user, houseState }) {
     if (convoId === 36) {
       return (
         <button className="togreen button">
-          <Link to="/end">Moving on...</Link>
+          <Link to="/end" className="endbtn">Thanks for playing, {user}!</Link>
         </button>
       );
     }

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function End() {
+  useEffect(() => {
+    fetch(`http://localhost:9292/users/2`, {
+      method: "DELETE",
+    });
+  });
   return (
     <div className="video">
       <h1>
@@ -20,8 +25,14 @@ function End() {
           allow="autoplay"
         ></iframe>
       </span>
-      <audio autoplay="true" src="https://www.youtube.com/watch?v=P6dC8F6z11E"></audio><br/>
-    <Link to="/" className="rickroll">Back to Home</Link>
+      <audio
+        autoplay="true"
+        src="https://www.youtube.com/watch?v=P6dC8F6z11E"
+      ></audio>
+      <br />
+      <Link to="/" className="rickroll">
+        Back to Home
+      </Link>
     </div>
   );
 }

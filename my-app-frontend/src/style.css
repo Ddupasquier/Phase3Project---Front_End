@@ -214,12 +214,28 @@ button > img {
 }
 
 .q {
-  animation: ends 3s ease-in 4s;
+  animation: q 3s ease-in 4s;
   animation-fill-mode: forwards;
   visibility: hidden;
 }
 
-@keyframes ends {
+@keyframes q {
+  to {
+    visibility: visible;
+    width: 0;
+    height: 0;
+  }
+}
+
+
+.endbtn {
+  animation: endbtn 3s ease-in 4s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  background: none;
+}
+
+@keyframes endbtn {
   to {
     visibility: visible;
     width: 0;
