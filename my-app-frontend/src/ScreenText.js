@@ -71,7 +71,7 @@ function ScreenText({ data, handleDataState }) {
 
   function endbtn() {
     if (convoId === 36) {
-      return <button><Link to="/end">Moving on...</Link></button>
+      return <button className="togreen button"><Link to="/end">Moving on...</Link></button>
     }
   }
 
