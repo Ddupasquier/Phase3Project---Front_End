@@ -4,7 +4,7 @@ import blinkingarrow from "./LocalAssets/right_arrow_transparent.gif";
 
 function ScreenText({ data, handleDataState }) {
   // const [convoId, setConvoId] = useState(1);
-  console.log(data);
+  // console.log(data);
   const [typewrittenText, setTypewrittenText] = useState("");
   const [roomData, convoId] = data;
   const [intervalId, setIntervalId] = useState(null);
@@ -14,7 +14,7 @@ function ScreenText({ data, handleDataState }) {
   const speed = 0;
 
   useEffect(() => {
-    console.log("looping");
+    // console.log("looping");
     const id = setInterval(() => {
       setTypewrittenText((text) => {
         if (text.length < txt.length) {
@@ -54,7 +54,7 @@ function ScreenText({ data, handleDataState }) {
     }
   }
 
-  console.log(currentConvo);
+  // console.log(currentConvo);
   const choices = currentConvo[0].choices;
   const buttons = choices.map((c) => (
     <button

@@ -13,7 +13,7 @@ const [houseState, setHouseState] = useState("basement_attic")
       <audio
         className="audio"
         controls
-        src={Audio} autoplay>
+        src={Audio} autoPlay>
             Your browser does not support the
             <code>audio</code> element.
     </audio>

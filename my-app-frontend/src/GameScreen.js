@@ -17,7 +17,7 @@ function GameScreen({ setHouseState }) {
     }
   }
 
-  console.log(data);
+  // console.log(data);
   useEffect(() => {
     fetch("http://localhost:9292/rooms/9")
       .then((res) => res.json())
