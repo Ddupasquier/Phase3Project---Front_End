@@ -114,9 +114,11 @@ button > img {
   display: grid;
   grid-template-columns: auto auto auto;
   color: black;
-  margin-left: 14%;
+  margin-left: .5rem;
+  margin-right: .5rem;
   margin-bottom: 2%;
   text-align: left;
+  height: 40%;
 }
 
 .introscreen {
@@ -128,6 +130,7 @@ button > img {
   border: solid rgb(77, 77, 77);
   border-radius: 10px;
   background: rgb(77, 77, 77);
+  height: 30%;
 }
 
 .togreen {
@@ -157,6 +160,10 @@ button > img {
 .cardbg {
   background: black;
   margin-bottom: 3rem;
+}
+
+.card {
+  padding: 1%;
 }
 
 .video {

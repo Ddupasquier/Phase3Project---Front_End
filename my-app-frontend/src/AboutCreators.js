@@ -1,7 +1,7 @@
 import React from "react";
 function AboutCreators() {
   return (
-    <div className="aboutcreators cards">
+    <div className="cards">
       <div className="card justin">
         <div className="content">
           <div className="header">
