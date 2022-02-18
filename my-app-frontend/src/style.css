@@ -8,7 +8,7 @@
 }
 
 .fliphouse {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.164)),
+  background: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.596)),
     url("https://thumbs.dreamstime.com/b/burnt-grunge-brick-wall-flaking-paint-wall-burnt-peeling-paint-now-black-used-to-be-white-revealing-brick-structure-154481847.jpg");
   background-size: cover;
 }

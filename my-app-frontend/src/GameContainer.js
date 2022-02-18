@@ -7,7 +7,7 @@ const [houseState, setHouseState] = useState("basement_attic")
 
 
   return (
-    <div id="bg" className={houseState}>
+    <div id="bg" className="fliphouse">
       <div className="gamescreen togreen">
         <GameScreen setHouseState={setHouseState}/>
         <p>
