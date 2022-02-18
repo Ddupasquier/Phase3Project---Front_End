@@ -20,7 +20,7 @@ return (
       </Link>
       
       <p className="togreen">
-        Maybe we put a bit about the game in this section
+        
       </p>
       <div>
         <p>
