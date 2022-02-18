@@ -14,13 +14,14 @@
 }
 
 .reghouse {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.603)),
     url("https://images6.alphacoders.com/462/thumb-1920-462774.jpg");
   background-size: cover;
 }
 
 .basement_attic {
-  background: black;
+  background: url("./LocalAssets/basement-wallpaper-1440x900.png");
+  background-size: cover;
 }
 
 body,
@@ -94,20 +95,18 @@ button > img {
   margin-right: 1rem;
 }
 
-.inventory {
-  margin-left: 1%;
-}
-
 .map {
-  margin-left: 3%;
+  position: relative;
+  top: -43rem;
+  right: -91%;
+
 }
 
-.items {
-  font-size: 2rem;
-}
-
-.col {
-  width: 20%;
+.collapsediv {
+  width: 45%;
+  position: relative;
+  top: -43rem;
+  right: -91%;
 }
 
 .aboutcreators {
@@ -117,10 +116,6 @@ button > img {
   margin-left: 14%;
   margin-bottom: 2%;
   text-align: left;
-}
-.card {
-  margin: 0.5rem;
-  padding: 0.5rem;
 }
 
 .introscreen {
@@ -139,8 +134,14 @@ button > img {
 }
 
 .button {
-  background: black;
-  border: none;
+  background: rgb(48, 48, 48);
+  border: solid black 1px;
+}
+
+.button:hover {
+  background-color: grey;
+  color:  rgb(149, 275, 85);
+  border: solid black 3px;
 }
 
 .bitfont {
