@@ -19,7 +19,7 @@
   background-size: cover;
 }
 
-.basement_attic {
+.basement, .attic {
   background: url("./LocalAssets/basement-wallpaper-1440x900.png");
   background-size: cover;
 }
@@ -68,7 +68,8 @@ body::-webkit-scrollbar {
 
 .screentext > p {
   text-indent: 50px;
-  text-align: left;
+  /* text-align: left; */
+  text-align: justify;
 }
 
 .screentext > img {
@@ -97,7 +98,7 @@ button > img {
 
 .map {
   position: relative;
-  top: -88vh;
+  top: -87vh;
   right: -90%;
 
 }
@@ -225,4 +226,22 @@ button > img {
   position: absolute;
   top: 5px;
   left: 84%;
+}
+
+.submitbtn {
+  background: none;
+  border: none;
+}
+
+.submitbtn:hover {
+  color: blue;
+}
+
+input {
+  margin: 1%;
+}
+
+.username {
+  float: right;
+  font-size: .5rem;
 }

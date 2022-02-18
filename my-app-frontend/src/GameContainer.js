@@ -4,7 +4,7 @@ import Map from "./Map";
 import Audio from "./LocalAssets/dark-drone-ambient-(black13-first.was sound).mp3"
 
 function GameContainer() {
-const [houseState, setHouseState] = useState("basement_attic")
+const [houseState, setHouseState] = useState("basement")
 
 
   return (
@@ -18,7 +18,7 @@ const [houseState, setHouseState] = useState("basement_attic")
             <code>audio</code> element.
     </audio>
       <div className="gamescreen togreen">
-        <GameScreen setHouseState={setHouseState}/>
+        <GameScreen setHouseState={setHouseState} houseState={houseState}/>
         <p>
           <a
             className="btn btn-primary map togreen button"

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 function End() {
   return (
     <div className="video">
@@ -18,7 +20,8 @@ function End() {
           allow="autoplay"
         ></iframe>
       </span>
-      <audio autoplay="true" src="https://www.youtube.com/watch?v=P6dC8F6z11E"></audio>
+      <audio autoplay="true" src="https://www.youtube.com/watch?v=P6dC8F6z11E"></audio><br/>
+    <Link to="/" className="rickroll">Back to Home</Link>
     </div>
   );
 }

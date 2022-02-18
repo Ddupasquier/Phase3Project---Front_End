@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import image from "./LocalAssets/pixil-frame-0 (2).png";
+import flipimage from "./LocalAssets/fliphouse.png";
 import blinkingarrow from "./LocalAssets/right_arrow_transparent.gif";
 
-function ScreenText({ data, handleDataState }) {
+function ScreenText({ data, handleDataState, user, houseState }) {
   // const [convoId, setConvoId] = useState(1);
   // console.log(data);
   const [typewrittenText, setTypewrittenText] = useState("");
@@ -71,13 +72,22 @@ function ScreenText({ data, handleDataState }) {
 
   function endbtn() {
     if (convoId === 36) {
-      return <button className="togreen button"><Link to="/end">Moving on...</Link></button>
+      return (
+        <button className="togreen button">
+          <Link to="/end">Moving on...</Link>
+        </button>
+      );
     }
   }
 
   return (
     <>
-      <img src={image} alt="img"></img>
+      <p className="username">Username: {user}</p>
+      {houseState === "attic" || houseState === "fliphouse" ? (
+        <img src={flipimage} alt="flip" />
+      ) : (
+        <img src={image} alt="reg" />
+      )}
       <br />
       <p className="convo_text" id="demo">
         {typewrittenText}
