@@ -141,7 +141,7 @@ button > img {
 .button:hover {
   background-color: grey;
   color:  rgb(149, 275, 85);
-  border: solid black 3px;
+  /* border: solid black 3px; */
 }
 
 .bitfont {
